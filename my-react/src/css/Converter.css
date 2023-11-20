@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+body {
+    background-image: url("../images/ade.jpg");
+    background-size: cover;
+    font-family: 'Mulish' , 'serif';
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.span {
+    padding-right: 120px;
+}
+
+.div1 {
+   color: white;
+   font-size: 1.5rem;
+   border: 2px solid skyblue;
+   margin: 4vh 20vw;
+   padding: 30px 30px;
+   border-radius: 10px;
+   background-color: rgb(135, 206, 235, 0.4);
+}
+
+#input {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50%;
+    height: 35px;
+}
+
+button {
+    border: 0px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(9, 179, 247);
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 30px;
+}
+
+.div3 {
+    background-color: rgb(9, 179, 247);
+    border: 1px solid white;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.div4 {
+    background-color: rgb(9, 179, 247);
+    border: 1px solid white;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
