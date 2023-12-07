@@ -13,3 +13,11 @@ export const userColors = {
     color5: "yellow",
     color6: "orange"
 }
+
+export const placeholders = {
+    placeholder1: "FIRST NAME",
+    placeholder2: "OTHER NAME",
+    placeholder3: "EMAIL",
+    placeholder4: "PHONE",
+    placeholder5: "PASSWORD"
+}
