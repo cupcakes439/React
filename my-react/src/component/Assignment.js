@@ -29,7 +29,7 @@ const Assignment = ({ placeholder })=> {
     } 
 
      return (
-        <section>
+        <>
             
             {
                 count==0?
@@ -57,7 +57,7 @@ const Assignment = ({ placeholder })=> {
                 </div>:
                 "Sorry , that's all"
             }
-        </section>
+        </>
      )
 }
 export default Assignment
