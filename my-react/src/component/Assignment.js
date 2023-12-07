@@ -36,7 +36,7 @@ const Assignment = ({ placeholder })=> {
                 <div className="div1">
                     <input type="text" value={name} onChange={nameValue} placeholder={placeholder.placeholder1}/> 
                     <input type="text" value={otherNames} onChange={otherNamesValue} placeholder={placeholder.placeholder2}/> 
-                    <button onClick={increment}>NEXT</button>
+                    <button className="btn" onClick={increment}>NEXT</button>
                 </div>:
                 count==1?
                 <div className="div2">
