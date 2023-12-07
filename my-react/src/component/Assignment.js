@@ -1,5 +1,7 @@
 import { useState } from "react"
 import "../css/Assignment.css"
+import eyeOpened from "../images/eye-opened.png"
+import eyeClosed from "../images/eyes-closed.png"
 
 const Assignment = ({ placeholder })=> {
      const [name , setName] = useState("")
@@ -16,6 +18,8 @@ const Assignment = ({ placeholder })=> {
      const emailValue = (e)=> setEmail(e.target.value)
      const phoneValue = (e)=> setPhone(e.target.value)
      const passwordValue = (e)=> setPassword(e.target.value)
+     const [eyeOpen , setEyeOpen] = useState(false)
+     const handleEye = ()=> setEyeOpen(!eyeOpen)
 
     const submit = (e)=> {
         e.preventDefault()
@@ -49,7 +53,12 @@ const Assignment = ({ placeholder })=> {
                 </div>:
                 count==2?
                 <div className="div1">
-                    <input type="password" value={password} onChange={passwordValue} placeholder={placeholder.placeholder5}/>
+                    <input type={eyeOpen? "text" : "password"} value={password} onChange={passwordValue} placeholder={placeholder.placeholder5}/>
+                    <span onClick={handleEye}>
+                        {
+                          eyeOpen? <img src={eyeOpened} width={"30px"} height={"30px"}/> : <img src={eyeClosed} width={"30px"} height={"30px"}/>
+                        }
+                    </span>
                     <div className="div2">
                         <button onClick={decrement}>PREV</button>
                         <button onClick={submit}>SUBMIT</button>
