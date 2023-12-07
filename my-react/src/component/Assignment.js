@@ -56,7 +56,7 @@ const Assignment = ({ placeholder })=> {
                     <input type={eyeOpen? "text" : "password"} value={password} onChange={passwordValue} placeholder={placeholder.placeholder5}/>
                     <span onClick={handleEye}>
                         {
-                          eyeOpen? <img src={eyeOpened} width={"30px"} height={"30px"}/> : <img src={eyeClosed} width={"30px"} height={"30px"}/>
+                          eyeOpen? <img src={eyeOpened} width={"25px"} height={"25px"}/> : <img src={eyeClosed} width={"30px"} height={"30px"}/>
                         }
                     </span>
                     <div className="div2">
