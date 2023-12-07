@@ -32,23 +32,27 @@ const Assignment = ({ placeholder })=> {
             
             {
                 count==0?
-                <div>
-                    <input type="text" value={name} onChange={nameValue} placeholder={placeholder.placeholder1}/> <br/>
-                    <input type="text" value={otherNames} onChange={otherNamesValue} placeholder={placeholder.placeholder2}/> <br/>
+                <div className="div1">
+                    <input type="text" value={name} onChange={nameValue} placeholder={placeholder.placeholder1}/> 
+                    <input type="text" value={otherNames} onChange={otherNamesValue} placeholder={placeholder.placeholder2}/> 
                     <button onClick={increment}>Next</button>
                 </div>:
                 count==1?
-                <div>
-                    <input type="email" value={email} onChange={emailValue} placeholder={placeholder.placeholder3}/> <br/>
-                    <input type="tel" value={phone} onChange={phoneValue}placeholder={placeholder.placeholder4}/> <br/>
-                    <button onClick={decrement}>Prev</button>
-                    <button onClick={increment}>Next</button>
+                <div className="div2">
+                    <input type="email" value={email} onChange={emailValue} placeholder={placeholder.placeholder3}/>
+                    <input type="tel" value={phone} onChange={phoneValue}placeholder={placeholder.placeholder4}/>
+                    <div className="div3">
+                        <button onClick={decrement}>Prev</button>
+                        <button onClick={increment}>Next</button>
+                    </div>
                 </div>:
                 count==2?
-                <div>
-                    <input type="password" value={password} onChange={passwordValue} placeholder={placeholder.placeholder5}/> <br/>
-                    <button onClick={decrement}>Prev</button>
-                    <button onClick={submit}>Submit</button>
+                <div className="div4">
+                    <input type="password" value={password} onChange={passwordValue} placeholder={placeholder.placeholder5}/>
+                    <div className="div5">
+                        <button onClick={decrement}>Prev</button>
+                        <button onClick={submit}>Submit</button>
+                    </div>
                 </div>:
                 "Sorry , that's all"
             }
