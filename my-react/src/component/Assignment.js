@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Assignment = ()=> {
+const Assignment = ({ placeholder })=> {
      const [name , setName] = useState("")
      const [otherNames , setOtherNames] = useState("")
      const [email, setEmail] = useState("")
@@ -33,20 +33,20 @@ const Assignment = ()=> {
             {
                 count==0?
                 <div>
-                    <input type="text" value={name} onChange={nameValue}/> <br/>
-                    <input type="text" value={otherNames} onChange={otherNamesValue}/> <br/>
+                    <input type="text" value={name} onChange={nameValue} placeholder={placeholder.placeholder1}/> <br/>
+                    <input type="text" value={otherNames} onChange={otherNamesValue} placeholder={placeholder.placeholder2}/> <br/>
                     <button onClick={increment}>Next</button>
                 </div>:
                 count==1?
                 <div>
-                    <input type="email" value={email} onChange={emailValue}/> <br/>
-                    <input type="tel" value={phone} onChange={phoneValue}/> <br/>
+                    <input type="email" value={email} onChange={emailValue} placeholder={placeholder.placeholder3}/> <br/>
+                    <input type="tel" value={phone} onChange={phoneValue}placeholder={placeholder.placeholder4}/> <br/>
                     <button onClick={decrement}>Prev</button>
                     <button onClick={increment}>Next</button>
                 </div>:
                 count==2?
                 <div>
-                    <input type="password" value={password} onChange={passwordValue}/> <br/>
+                    <input type="password" value={password} onChange={passwordValue} placeholder={placeholder.placeholder5}/> <br/>
                     <button onClick={decrement}>Prev</button>
                     <button onClick={submit}>Submit</button>
                 </div>:
