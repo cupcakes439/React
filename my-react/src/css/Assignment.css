@@ -46,3 +46,9 @@ button {
     display: flex;
     gap: 22rem;
 }
+
+span {
+    position: fixed;
+    right: 28rem;
+    top: 13.5rem;
+}
