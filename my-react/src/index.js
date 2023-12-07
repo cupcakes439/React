@@ -6,17 +6,19 @@ import reportWebVitals from './reportWebVitals';
 // import Converter from './component/Converter';
 // import State from "./component/State"
 // import Name from './component/Name';
-import Dropdown from './component/Dropdown';
-import { userColors } from './component/data';
+// import Dropdown from './component/Dropdown';
+// import { userColors } from './component/data';
 import Assignment from './component/Assignment';
 // import Select from './component/Select';
+import { placeholders } from './component/data';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Dropdown colors={ userColors }/> */}
-    <Assignment />
+    <Assignment placeholder={ placeholders }/>
   </React.StrictMode>
 );
 
