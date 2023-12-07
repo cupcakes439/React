@@ -1,2 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
+section {
+    width: "100%";
+    height: "100vh";
+    font-family: 'Mulish' , 'serif';
+    background-color: aquamarine;
+}
