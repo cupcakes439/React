@@ -120,6 +120,7 @@ nav {
 
 #flag {
     margin-right: 50px;
+    margin-top: 5px;
 }
 
 .ki {
@@ -303,12 +304,15 @@ h1 {
 .a {
     margin-right: 6px;
     color: #40196d;
-    text-decoration: underline;
 }
 
 .div2 {
     width: 380px;
     height: 290.9px;
+}
+
+.boy {
+    text-decoration: underline;
 }
 
 .div3 {
@@ -678,6 +682,7 @@ li {
 .div35 {
     width: 235.36px;
     height: 104.19px;
+    text-align: left;
 }
 
 .span2 {
@@ -702,6 +707,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    text-align: left;
 }
 
 .p7 {

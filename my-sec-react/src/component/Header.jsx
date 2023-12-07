@@ -1,6 +1,7 @@
 import "../css/Kuda.css"
 import kudaIcon from "../assets/Images/kuda icon 2.png"
-import flag from "../assets/Images/flag.svg"
+import flag from "../assets/Images/flag.png"
+
 const Header = ()=> {
     return (
         <>
