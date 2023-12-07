@@ -50,7 +50,7 @@ const Assignment = ({ placeholder })=> {
                     <button onClick={decrement}>Prev</button>
                     <button onClick={submit}>Submit</button>
                 </div>:
-                "Sorrty , that's all"
+                "Sorry , that's all"
             }
         </>
      )
