@@ -6,3 +6,15 @@ body {
     font-family: 'Mulish' , 'serif';
     background-color: aquamarine;
 }
+
+input {
+    width: 35%;
+    text-align: center;
+    color: aquamarine;
+    background-color: gainsboro;
+    border: 2px solid gainsboro;
+    height: 40px;
+    border-radius: 10px;
+}
+
+/* button */
