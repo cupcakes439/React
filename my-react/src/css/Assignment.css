@@ -41,3 +41,8 @@ button {
 .btn {
     margin-left: 17rem;
 }
+
+.div2 {
+    display: flex;
+    gap: 22rem;
+}
