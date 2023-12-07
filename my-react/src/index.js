@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
-import App from './component/App';
+// import App from './component/App';
 import reportWebVitals from './reportWebVitals';
-import Converter from './component/Converter';
+// import Converter from './component/Converter';
+// import State from "./component/State"
+// import Name from './component/Name';
+import Dropdown from './component/Dropdown';
+import { userColors } from './component/data';
+import Assignment from './component/Assignment';
+// import Select from './component/Select';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Converter />
+    {/* <Dropdown colors={ userColors }/> */}
+    <Assignment />
   </React.StrictMode>
 );
 
